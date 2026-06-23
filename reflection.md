@@ -26,17 +26,23 @@ Document at least 3 bugs you found. Add rows as needed.
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+- I used Claude 
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+- When I asked Claude to help me refactor the logic into a separate file, it suggested creating a `logic_utils.py` file and moving the functions there. I followed its suggestion, and after refactoring, I ran the game and verified that the functionality remained intact by testing various guesses and ensuring the outcomes were as expected. For example, get_range_for_difficulty function
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+- AI was incorrect when I gave a vague request for fixing the update_score function. By having it first analyze the function, it gained a better understanding of the logic and then suggested a fix that was more accurate. I verified the result by running tests and checking the score updates for various scenarios, confirming that the function now behaves as intended.
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+- I decided by having claude generate a pytest for the function, and then I ran the test to see if it passed. If the test passed, I considered the bug fixed. Additionally, I manually tested the game by playing through various scenarios to ensure that the expected behavior was consistent with the actual behavior.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+  - I ran a pytest for the `check_guess` function, which tested various scenarios such as guesses being too high, too low, or correct. The test confirmed that the function returned the expected outcomes and messages for each scenario.
 - Did AI help you design or understand any tests? How?
+- Yes, I used AI to generate a test for each specific bug it fixed. I provided the AI with the function and asked it to create a pytest that would cover different cases. The AI generated tests that I could run to verify that the function behaved as expected, which helped me understand how to structure my own tests in the future.
 
 ---
 
