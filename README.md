@@ -25,28 +25,24 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [Guess the secret number with the provided number of attempts until you guess the secret number] Describe the game's purpose.
+- [Too high and too low swapped, decimal number parsing, even number increasing score even though its wrong] Detail which bugs you found.
+- [decimal number treated as invalid input, swapped too high and too low, and every wrong guess should decrease score regardless if it is even or not] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
-
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+1. User enters a guess in the input box with a decimal number
+2. Game treats the decimal input as invalid and prompts the user to enter a whole number
 
 ## 🧪 Test Results
 
 ```
 # Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+tests/test_game_logic.py .......                                                                                                                                 [100%]
+
+========================================================================== 7 passed in 0.01s ===========================================================================
 ```
 
 ## 🚀 Stretch Features

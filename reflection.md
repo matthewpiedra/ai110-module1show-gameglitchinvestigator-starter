@@ -55,6 +55,8 @@ Document at least 3 bugs you found. Add rows as needed.
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
+  - Validate AI generated code, check for errors, and run tests to ensure functionality is correct. I want to continue using AI as a tool to assist in coding, but I will always verify its suggestions and test the code thoroughly before considering it complete.
 - What is one thing you would do differently next time you work with AI on a coding task?
+  - Be patient, and provide clear, specific instructions to the AI. I would also take the time to understand the code it generates, rather than blindly accepting its suggestions, to ensure that I can effectively debug and maintain the code in the future.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+  - AI code is not perfect and requires human oversight. While it can be a powerful tool for generating code quickly, it is essential to validate its output, understand the logic, and test thoroughly to ensure that the final product meets the desired functionality and quality standards.
