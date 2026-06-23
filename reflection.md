@@ -4,9 +4,12 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ## 1. What was broken when you started?
 
-- What did the game look like the first time you ran it?
-- List at least two concrete bugs you noticed at the start  
-  (for example: "the hints were backwards").
+- new game doesn’t work at all, the developer debug info refreshes the secret and attempts, but not history and game session
+		- I get stuck on game won! If I win
+- It seems the settings range does match the “make a guess” dialog box number range, nor does the secret number
+		- Settings should sync, and the attempts left are off by 1 to the settings attempts allowed
+- When clicking submit guess, I expect the history field to autofill, not anytime I enter a new number
+		- Almost like developer debug info only updates if I click enter or enter new number, it should auto update when I guess a 		number
 
 **Bug Reproduction Log**
 
@@ -14,9 +17,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| guess of 10 | Go higher hint | Go lower hint | |
+| guess of 200 | Go lower hint | Go higher hint | |
+| Click on new game | history resets | history does not reset | |
 
 ---
 
